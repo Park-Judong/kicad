@@ -1,1 +1,3 @@
 # kicad
+
+reference by DigiKey
