@@ -1,0 +1,80 @@
+tutorial about Kicad 7.0 in korean 
+
+step 1
+
+  1. circuit design
+  2. for custom 7555 IC, we should make a "library" for that.
+  3. especially for draw it on schematic, we need a "symbol library".
+  4. for PCB layout, we need a footprint library".
+
+step 2
+
+  1. Create a new project
+  2. symbol library - new libary (grobal/project) - 555 Badge
+  3. new symbol - 7555
+  4. draw IC outline
+    pin: P
+    high bar: ~{text}
+    line, rectangle, circle, text
+    reference designer: abbreviation of symbols
+    datasheet: shape of IC, pins
+
+step 3
+
+  1. open schemaic
+  2. page setting: revision, title, author
+  3. add a symbol(A): R, CP, 7555, LED, BJT diode, VCC, GND
+  4. we can add extra libraries on "https://github.com/Digi-Key/digikey-kicad-library"
+  5. preferences - manage symbol libraries - add a library
+
+step 4: creating footprints
+
+  1. measure the IC according to the datasheet from...digikey
+  2. footprint editor - new library
+  3. or preference - manage footprint libraries
+  4. 1 mil = 1/1000 inch
+  5. grid: 10 mils 
+  6. draw footprint
+    pads: hole(type(through-hole/SMD), shape(circular))
+    lines: starting points(X,Y) - end points(X,Y)
+    notch: arc(180 degree)
+======↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑===================================F.Silk
+    lines: draw twice as thick (ex..0.008)
+======↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑===================================F.Fab   
+
+step 5
+
+  1. fill in schematic symbol designers: re-numbering components
+  2. electrical rules checker(ERC)
+  3. run footprint assignment tool
+    filtered by keywords, pins, libraries
+    we can add other libraries
+    we can specify what we will use for the schematic by referencing digikey
+  4. netlist
+    1. tools - update PCB from schematic
+    2. file - export - netlist
+
+step 6
+
+  1. open PCB
+  2. page setting like when we set schematic page
+  3. file - board setup according to "OSHPARK - support - kicad"
+  4. layout footprint to minimize acrossing nets
+    M: moving a component
+    R: rotating a component
+  5. board outline: "edge.cuts" layer
+
+step 7
+
+  1. trace: W (B.Cu/F.Cu) + place through hole
+  2. trace width: edit track
+  3. copper zone: B (connect GND, VCC)
+  4. DRC
+  5. copper pour on F.Silk
+  6. text on Silk, Copper
+
+step 8
+
+step 9
+
+step 10
