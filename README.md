@@ -2,7 +2,7 @@
 
 reference by DigiKey
 
-ch2 <b></b>
+ch2 <br></br>
 ![ch2](https://github.com/Park-Judong/kicad/assets/84074206/dc1db219-e4bc-4899-92bf-4e37804f9204)
 <b></b>
 ch3 <b></b>
