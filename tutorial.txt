@@ -78,3 +78,11 @@ step 8
 step 9
 
 step 10
+
+please be informed that..
+  1. We can update PCB layout from schematic by "Tools - Update PCB from Schemetic"
+  2. we can put a bar over alphabet by "~{text}"
+  3. Board outline: 2.12 x 3.37
+  4. hole size: 0.4 x 0.15
+  5. Be aware of "acid trap"!!!
+  6. When we draw board outline, we can let the origin (0,0) 
